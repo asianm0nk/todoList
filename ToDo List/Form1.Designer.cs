@@ -28,12 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            createBTN = new Button();
+            TextBox = new TextBox();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            SuspendLayout();
+            // 
+            // createBTN
+            // 
+            createBTN.Location = new Point(683, 42);
+            createBTN.Name = "createBTN";
+            createBTN.Size = new Size(94, 29);
+            createBTN.TabIndex = 0;
+            createBTN.Text = "Create";
+            createBTN.UseVisualStyleBackColor = true;
+            createBTN.Click += createBTN_Click;
+            // 
+            // TextBox
+            // 
+            TextBox.Location = new Point(461, 44);
+            TextBox.Name = "TextBox";
+            TextBox.Size = new Size(216, 27);
+            TextBox.TabIndex = 3;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.AutoScroll = true;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
+            tableLayoutPanel1.Location = new Point(12, 42);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.Size = new Size(408, 349);
+            tableLayoutPanel1.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(TextBox);
+            Controls.Add(createBTN);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button createBTN;
+        private TextBox TextBox;
+        private TableLayoutPanel tableLayoutPanel1;
     }
 }
